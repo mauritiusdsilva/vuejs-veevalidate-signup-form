@@ -216,14 +216,14 @@
                                         <div class="field">
                                             <label class="label">Phone Number</label>
                                             <div class="control">
-                                                <input v-validate="'required|min:6|digits:8'" name="phone" data-vv-as="Phone" class="input" type="number" placeholder="Enter phone">
+                                                <input v-validate="'required|min:6|digits:8'" name="phone" data-vv-as="Phone" class="input" type="number">
                                                 <span v-if="errors.has('phone')" class="help is-danger">{{ errors.first('phone') }}</span>
                                             </div>
                                         </div>
                                         <div class="field">
                                             <label class="label">Password</label>
                                             <div class="control">
-                                                <input v-validate="'required|min:6'" name="password" data-vv-as="Password" class="input" type="password" placeholder="Enter password">
+                                                <input v-validate="'required|min:6'" name="password" data-vv-as="Password" class="input" type="password">
                                                 <span v-if="errors.has('password')" class="help is-danger">{{ errors.first('password') }}</span>
                                             </div>
                                         </div>
@@ -486,7 +486,7 @@
                                         <div class="field">
                                             <label class="label">Email</label>
                                             <div class="control has-icons-right">
-                                                <input v-validate="'required|email'" name="email" data-vv-as="Email" :class="{'input': true, 'is-danger': errors.has('email') }" type="email" placeholder="Enter your email" v-model="email">
+                                                <input v-validate="'required|email'" name="email" data-vv-as="Email" :class="{'input': true, 'is-danger': errors.has('email') }" type="email">
                                                 <span class="icon is-small is-right">
                                                     <i v-if="errors.has('email')" class="material-icons">warning</i>
                                                     <i v-else class="material-icons">check</i>
@@ -510,14 +510,14 @@
                                         <div class="field">
                                             <label class="label">OTP</label>
                                             <div class="control">
-                                                <input v-validate="'required|alpha'" name="OTP" class="input" data-vv-as="OTP" type="text" placeholder="Enter OTP">
+                                                <input v-validate="'required|alpha'" name="OTP" class="input" data-vv-as="OTP" type="text">
                                                 <span v-if="errors.has('OTP')" class="help is-danger">{{ errors.first('OTP') }}</span>
                                             </div>
                                         </div>
                                         <div class="field">
                                             <label class="label">Confirm Password</label>
                                             <div class="control">
-                                                <input class="input" v-validate="'required|min:6'" name="confirmpassword" data-vv-as="Confirm Password" type="password" placeholder="Confirm password...">
+                                                <input class="input" v-validate="'required|min:6'" name="confirmpassword" data-vv-as="Confirm Password" type="password">
                                                 <span v-if="errors.has('confirmpassword')" class="help is-danger">{{ errors.first('confirmpassword') }}</span>
                                             </div>
                                         </div>
